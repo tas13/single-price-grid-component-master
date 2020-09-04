@@ -1,0 +1,220 @@
+.attribution { 
+    font-size: 0.8vw; 
+    text-align: center; 
+    color: hsl(218, 22%, 67%)
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+body {
+    background-color: hsl(204, 43%, 93%);
+    font-family: Karla;
+    color: hsl(204, 43%, 93%)
+}
+
+#container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 33vw;
+    box-shadow: 0vw 0.1vw 1vw rgba(63, 81, 92, 0.493);
+    border-radius: 0.5vw;
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "left right";
+}
+
+#intro {
+    background-color: white;
+    color: hsl(218, 22%, 67%);
+    grid-area: header;
+    padding: 2vw;
+    font-size: 0.8vw;
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+    border-top-left-radius: 0.5vw;
+    border-top-right-radius: 0.5vw;
+
+    p {
+        line-height: 1.3vw;
+    }
+}
+
+#pricing {
+    background-color: hsl(179, 62%, 43%);
+    grid-area: left;
+    padding: 2vw;
+    border-bottom-left-radius: 0.5vw;
+    padding-top: 1.2vw;
+    margin-right: -2vw;
+    padding-bottom: 1.5vw;
+
+    b {
+        font-size: 1.5vw;
+        position: absolute;
+    }
+}
+
+#per {
+    font-weight: 400;
+    font-size: 0.8vw;
+    color: hsla(203, 44%, 93%, 0.781);
+    padding-top: 0.3vw;
+    margin-left: 3.5vw;
+    position: absolute;
+}
+
+#reasons {
+    background-color: hsl(179, 44%, 53%);
+    grid-area: right;
+    font-size: 0.7vw;
+    line-height: 1vw;
+    font-weight: 400;
+    color: hsla(203, 44%, 93%, 0.781);
+    padding: 2vw;
+    padding-top: 1.2vw;
+    padding-bottom: 1.5vw;
+    border-bottom-right-radius: 0.5vw;
+}
+
+h1 {
+    color: hsl(179, 62%, 43%);
+    font-size: 1.2vw;
+    margin-bottom: 1.3vw;
+}
+
+h2 {
+    color: hsl(71, 73%, 54%);
+    font-size: 0.9vw;
+}
+
+h3 {
+    font-size: 0.9vw;
+    color: white;
+}
+
+#access {
+    margin-top: 3vw;
+    font-size: 0.8vw;
+}
+
+#sign {
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    border: 0;
+    padding: 0.8vw;
+    padding-left: 4.7vw;
+    padding-right: 4.7vw;
+    margin-top: 0.5vw;
+    font-size: 0.8vw;
+    border-radius: 0.3vw;
+    box-shadow: 0vw 0.1vw 1vw rgba(66, 82, 92, 0.493);
+    position: absolute;
+}
+
+#sign:hover {
+    filter: brightness(110%);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 375px) {
+    .attribution { 
+        font-size: 3vw; 
+    }
+
+    @media only screen and (max-width: 375px) and (max-height: 667px ) {
+        body {
+            min-height: 200vw;
+        }
+
+        #container {
+            margin-top: 15vw;
+        }
+    }
+
+    #container {
+        width: 85vw;
+        box-shadow: 0vw 0.1vw 1vw rgba(63, 81, 92, 0.493);
+        border-radius: 2vw;
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "left" 
+        "right";
+    }
+
+    #intro {
+        padding: 7vw;
+        font-size: 3.5vw;
+        padding-bottom: 5vw;
+        border-top-left-radius: 2vw;
+        border-top-right-radius: 2vw;
+    
+        p {
+            line-height: 7vw;
+        }
+    }
+    
+    #pricing {
+        padding: 7vw;
+        border-bottom-left-radius: 0vw;
+        padding-top: 3vw;
+        height: 50vw;
+        margin-right: -0.1vw;
+        padding-bottom: 1.5vw;
+    
+        b {
+            font-size: 8vw;
+        }
+    }
+    
+    #per {
+        font-weight: 400;
+        font-size: 4vw;
+        padding-top: 2.2vw;
+        margin-left: 18vw;
+    }
+    
+    #reasons {
+        font-size: 3.5vw;
+        line-height: 5vw;
+        padding: 7vw;
+        padding-top: 2vw;
+        padding-bottom: 2.2vw;
+        border-bottom-right-radius: 2vw;
+        border-bottom-left-radius: 2vw;
+    }
+    
+    h1 {
+        font-size: 5vw;
+        margin-bottom: 6vw;
+        margin-top: -0.2vw;
+    }
+    
+    h2 {
+        font-size: 4vw;
+    }
+    
+    h3 {
+        font-size: 4vw;
+    }
+    
+    #access {
+        margin-top: 15vw;
+        font-size: 4vw;
+    }
+    
+    #sign {
+        padding: 3.5vw;
+        padding-left: 28vw;
+        padding-right: 28vw;
+        margin-top: 2vw;
+        font-size: 4vw;
+        border-radius: 1.6vw;
+        box-shadow: 0vw 0.1vw 1vw rgba(66, 82, 92, 0.493);
+    }
+  }
